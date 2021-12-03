@@ -1,0 +1,26 @@
+{
+	"name": "magic",
+	"version": "0.1.0",
+	"description": "",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pvinis/magic"
+	},
+	"keywords": [
+		"magic",
+		"prop",
+		"ruby"
+	],
+	"author": "Pavlos Vinieratos <pvinis@gmail.com>",
+	"license": "ISC"
+}
