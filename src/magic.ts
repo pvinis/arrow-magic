@@ -10,3 +10,5 @@ console.log(hrefs)
 
 ////tests, add more symbols to export as, maybe `prop` too
 ///try to use like $`href`
+
+///add readme
