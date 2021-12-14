@@ -1,6 +1,6 @@
 {
 	"name": "arrow-magic",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -24,6 +24,8 @@
 		"url": "git+https://github.com/pvinis/arrow-magic"
 	},
 	"keywords": [
+		"arrow-magic",
+		"arrow-function",
 		"magic",
 		"prop",
 		"like-ruby"

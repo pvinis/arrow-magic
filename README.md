@@ -2,6 +2,8 @@
 
 A great way to write simple arrow functions faster.
 
+[![npm version](https://badge.fury.io/js/arrow-magic.svg)](https://badge.fury.io/js/arrow-magic)
+
 
 ## Why arrow-magic?
 
@@ -50,7 +52,7 @@ const aThing = anotherThing.map($("name"))
 ```
 
 
-## Why is is `$`?
+## Why is it named `$`?
 
 Well, why not?
 
