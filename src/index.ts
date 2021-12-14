@@ -1,1 +1,1 @@
-export * from './magic'
+export * from "./magic"

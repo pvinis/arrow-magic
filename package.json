@@ -1,6 +1,6 @@
 {
 	"name": "arrow-magic",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -10,7 +10,8 @@
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
-		"test": "jest"
+		"test": "jest",
+		"publish": "npm publish"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.0.3",
@@ -20,7 +21,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pvinis/magic"
+		"url": "git+https://github.com/pvinis/arrow-magic"
 	},
 	"keywords": [
 		"magic",
