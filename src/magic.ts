@@ -1,10 +1,32 @@
-export const $ =
-	<Ks extends string, Rec extends Record<Ks, any>>(attribute: Ks) =>
-	(item: Rec) =>
-		item && item[attribute]
+type MagicOverload = {
+	<Key extends string, Value, Rec extends Record<Key, Value>>(attribute: Key): (
+		item: Rec,
+	) => Value
 
+	<
+		TagKey extends TemplateStringsArray,
+		Value,
+		Rec extends Record<string, Value>,
+	>(
+		attribute: TagKey,
+		...expr: string[]
+	): (item: Rec) => Value
+}
 
-////tests, add more symbols to export as, maybe `prop` too
-///try to use like $`href`
+export const magic: MagicOverload =
+	(attribute, ...strings) =>
+	(item) => {
+		let name = ''
+		if (Array.isArray(attribute)) {
+			attribute.forEach((str, i) => {
+				name += str + (strings[i] || '')
+			})
+		} else {
+			name = attribute
+		}
 
-///add readme
+		return item && item[name]
+	}
+
+export const $ = magic
+export const prop = magic
